@@ -1,8 +1,9 @@
-- name: test
+- name: frontend setup
   hosts: all
   tasks:
-    - name: Print Hello
-      ansible.builtin.debug:
-       msg: Hello world
+    - name: install nginx
+      ansible.builtin.dnf:
+       name: nginx
+       state: latest
 
        #ahjdhdwjds
