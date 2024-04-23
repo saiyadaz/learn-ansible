@@ -3,6 +3,6 @@
   become: yes
   tasks:
    - name: Disable default Nodejs Version Module
-      community.general.dnf_config_manager:
-        -name: Nodejs
-          state: disabled
+     community.general.dnf_config_manager:
+       name: Nodejs
+       state: disabled
