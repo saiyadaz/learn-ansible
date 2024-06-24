@@ -3,7 +3,7 @@
   vars:
       Url_Play: play.example.com
   tasks:
-      - name: Print variable on role-showing
+      - name: Print variable
         ansible.builtin.debug:
           msg: Url_Play - {{ Url_Play }}
       - name: Print variable on task
