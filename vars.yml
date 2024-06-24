@@ -1,0 +1,10 @@
+ -name:  Demo on vars
+  hosts: localhosts
+  vars:
+      Url_Play: play.example.com
+  tasks:
+      - name: Print variable
+        ansible.builtin.debug:
+          msg: Url_Play - {{ Url_Play }}
+
+        # play level variable can be accessed by all the tasks and roles.
